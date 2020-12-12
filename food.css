@@ -1,0 +1,549 @@
+<style>
+  body{
+  background-color: #1f0102;
+  position: relative;
+}#head{
+    margin-left: 100px;
+    margin-top:100px;
+    font-size: 30px;
+    text-indent:100px;
+    color: black;
+    text-align: center;
+    
+}
+header {
+  background-color: rgbA(0,0,0,0.7);
+  padding: 30px;
+  position: relative;
+}
+#h12{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 20px;
+  font-size: 100px;
+  text-align: center;
+  
+}
+h2{
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: rgb(17, 17, 16);
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: orange;
+  margin-top: 40px;
+  font-size: 20px;
+  height: 100px;
+  /*position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  
+}
+
+ul {
+  list-style-type: none;
+  background-color: rgb(221, 130, 45);
+  position: relative;
+
+}
+li{
+    float: left;
+    border-right:2px solid rgb(14, 13, 12);
+  position: relative;
+
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  /*display: block;*/
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: rgb(247, 136, 9);
+  color: black;
+  position: relative;
+}
+
+.content {
+  padding: 16px;
+  position: relative;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: relative;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+#butn{
+    margin-left: 43%;
+}
+.btn{
+    padding: 25px 50px;
+    border: 2px solid white;
+    background-color: rgb(196, 25, 20);
+    color: white;
+    /*margin: 300px;*/
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    cursor:pointer;
+    position: relative;
+}
+
+#home{
+    color: rgba(0,255, 255, 255);
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    height: 1000px;
+    background-image: url("https://www.diabetes.org/sites/default/files/styles/paragraph_50_50/public/2019-08/Diabetes-Superfoods-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    }
+    .right-menu a{
+   margin:0px 10px;
+   font-size:1.2rem;
+   color:rgba(0,0,0,0.7);
+   float:right;
+}
+.right-menu a:hover,
+.search-cancel:hover,
+.form-cancel:hover{
+  color:#0b9d8a;
+   transition:all ease 0.3s;
+}
+.fa-shopping-cart{
+   position:relative;
+}
+.num-cart-product{
+   position:absolute;
+   top:-17px;
+   right:-17px;
+   width:25px;
+   height:25px;
+   font-size:0.8rem;
+   border-radius:50%;
+   background-color:#0b9d8a;
+   color:#ffffff;
+   display:flex;
+   justify-content:center;
+    align-items:center;
+    font-weight:400;
+}
+.form{
+  width:100%;
+  height:100%;
+   position:fixed;
+   top:0px;
+   left:0px;
+   background-color:rgba(0,0,0,0.1);
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction:column;
+   z-index:102;
+}
+.login-form,
+.sign-up-form{
+  width:420px;
+  padding:20px 10px;
+  background-color:#ffffff;
+  box-shadow:2px 2px 30px rgba(0,0,0,0.1);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  border-radius:5px;
+  position:relative;
+}
+.login-form form,
+.sign-up-form form{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  width:100%;
+}
+.login-form strong,
+.sign-up-form strong{
+   color:#272727;
+   font-size:2rem;
+   margin:2px 7px 7px 7px;
+   text-transform:uppercase;
+   letter-spacing:0.5px;
+   font-weight:500;
+}
+.login-form input,
+.sign-up-form input{
+  width:90%;
+  height:45px;
+  margin:6px 0px;
+  padding:0px 10px;
+   border:1px solid rgba(0,0,0,0.1);
+  outline:none;
+  border-radius:7px;
+}
+.login-form input::placeholder,
+.sign-up-form input::placeholder{
+    color:rgba(0,0,0,0.5);
+}
+.login-form input[type="submit"],
+.sign-up-form input[type="submit"]{
+  background-color:#0b9d8a;
+  color:#ffffff;
+  border:none;
+  outline:none;
+  text-transform:uppercase;
+  margin-top:10px;
+  border-radius:3px;
+  box-shadow:2px 2px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.form-btns{
+   width:90%;
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   margin-top:10px;
+}
+.form-btns a{
+   color:#4d4d4d;
+   font-size:0.9rem;
+}
+.sign-up-btn{
+  border-bottom:1px solid #868686;
+  line-height:16px;
+}
+.form-cancel{
+  position:absolute;
+  right:20px;
+  top:10px;
+  color:#868686;
+}
+.login-form,
+.sign-up-form,
+.form{
+   display:none;
+}
+.login-active,
+.login-active .login-form{
+  display:flex;
+  animation:fade 0.3s;
+}
+.sign-up-active,
+.sign-up-active .sign-up-form{
+  display:flex;
+    animation:fade 0.3s;
+}
+
+.message h3{
+  marigin-bottom:15px;
+}
+.message p{
+  margin-bottom:10px;
+  padding-left:30px;
+  display:none;
+}
+.invalid{
+  color: rgb(221,0,0);
+}
+.invalid::before{
+  position:relative;
+  left:-15px;
+    content:"✖";
+
+}
+.valid{
+  color: :rgb(12,167,92);
+}
+.valid::before{
+   content:"✔";
+   position:relative;
+   left:-15px;
+}
+#services {
+  /*background-image: url("food2.jpg");*/
+  background-color:orange;
+  min-height: 75vh;
+  position: relative;
+}
+
+#services .heading h1 {
+  font-size: 4rem;
+  color: #000;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  position: relative;
+}
+
+#services .heading h1 span {
+  color: #FFF200;
+  
+}
+
+#services .heading p {
+  color: #ccc;
+  font-size: 2rem;
+  position: relative;
+}
+
+#services .card-container {
+  width: 95%;
+  margin: 7rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      position: relative;
+}
+
+#services .card-container .card {
+  height: 30rem;
+  width: 30rem;
+  background: #db630b;
+  padding: 1rem;
+  margin: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+#services .card-container .card img {
+  height: 50%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+     position: relative;
+}
+
+#services .card-container .card p {
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+#services .card-container .card button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 3.5rem;
+  width: 14rem;
+  background: #333;
+  color: #fff;
+  position: relative;
+}
+
+#services .card-container .card button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFF200;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+  
+}
+
+#services .card-container .card button:hover::before {
+  width: 100%;
+  
+}
+
+#services .card-container .card button:hover {
+  color: #333;
+  
+}
+
+#services .card-container .card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9)
+          
+}
+
+.about{
+    font-size: 45px;
+    color: white;
+    margin-left: 30px;
+  
+
+}
+#contact {
+  min-height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+#contact .heading h1 span {
+  color: #ffffff;
+  font-size: 45px; 
+  margin-left: 30px;
+  position: relative;
+
+}
+
+#contact form {
+  /*background: #b47d7d;*/
+  background-image:  url("food4.jfif");
+  background-size: cover;
+  padding-top: 2rem;
+  height: 500px;
+  width: 900px;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 2rem #333;
+          box-shadow: 0 0 2rem #333;
+  position: relative;
+
+}
+
+#contact form .inputBox {
+  position: relative;
+  text-align: center;
+}
+
+#contact form .inputBox input, #contact form .inputBox textarea {
+  outline: none;
+  border: .2rem solid white;
+  border-radius: .2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+  background-color: #faf9f9;
+  height: 3rem;
+  width: 90%;
+  font-size: 2rem;
+  position: relative;
+
+}
+
+#contact form .inputBox input:focus ~ h3,
+#contact form .inputBox input:valid ~ h3, #contact form .inputBox textarea:focus ~ h3,
+#contact form .inputBox textarea:valid ~ h3 {
+  font-size: 1.6rem;
+  left: 6%;
+  top: -.5rem;
+  color: #1f0102;
+  position: relative;
+}
+
+#contact form .inputBox textarea {
+  padding: 1rem;
+  resize: none;
+  height: 5rem;
+  position: relative;
+}
+
+#contact form .inputBox h3 {
+  position: absolute;
+  top: 2rem;
+  left: 7%;
+  position: relative;
+}
+
+#contact form input[type="submit"] {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 4rem;
+  width: 12rem;
+  margin-bottom: 2rem;
+  margin-left: 4%;
+  background: #333;
+  color: #fff;
+}
+
+#contact form input[type="submit"]::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #FFF200;
+  height: 100%;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+
+#contact form input[type="submit"]:hover::before {
+  width: 100%;
+}
+
+#contact form input[type="submit"]:hover {
+  color: #333;
+  background: #FFF200;
+}
+
+footer{
+    background-color:rgb(180,11,11);
+    padding: 30px;
+    text-align: center;
+}
+ul.a {
+  list-style-type: square;
+}
+.social-call{
+   height:40px;
+   border:1px solid rgba(0,0,0,0.05);
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+.social a{
+    margin:0px 5px;
+  color:rgba(0,0,0,0.7);
+   font-size:0.9rem;
+}
+.social a:hover{
+   color:#0b9d8a;
+   transition:all ease 0.3s;
+}
+
+</style>
